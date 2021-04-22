@@ -1,11 +1,11 @@
 # CRUD Laravel Livewire
 
 ## 0. Setup
-Repositori ini dibangun dengan Laravel versi 6.02 ke atas. Setelah melakukan fork dan clone dari repositori ini, lakukanlah langkah-langkah di bawah ini untuk menjalankan project. 
+Repositori ini dibangun dengan Laravel versi 8 ke atas. Setelah melakukan fork dan clone dari repositori ini, lakukanlah langkah-langkah di bawah ini untuk menjalankan project. 
 
-* masuk ke direktori CRUD-Laravel-livewire
+* masuk ke direktori laravel_crud
 ```bash
-$ cd CRUD-Laravel-livewire
+$ cd laravel_crud
 ```
 * jalankan perintah composer install untuk mendownload direktori vendor
 ```bash
