@@ -53,3 +53,28 @@ $ php artisan serve
 # 2. Testing API menggunakan Postman
 
 ## Register User 
+Buka aplikasi postman kalian, Buka tab request baru, lalu masukkan url http://127.0.01:8000/api/register, lalu ubahlah methodnya menjadi *POST*. Kemudian klik tab Headers Lalu tambahkan *key: Accept* dengan *value: application/json*. Kemudian klik tab Body lalu pilih *raw* dengan format *JSON*,
+Tuliskan: 
+```bash
+$ {
+    "name" : "contoh",
+    "email" : "contoh@gmail.com",
+    "password" : "blablabla"
+  }
+```
+Jika Berhasil: 
+```bash
+$ {
+    "status_code": 200,
+    "message": "Berhasil"
+  }
+```
+Jika Gagal :
+```bash
+$ {
+    "status_code": 400,
+    "message": "Gagal"
+  }
+```
+
+
