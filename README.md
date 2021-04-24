@@ -112,6 +112,41 @@ $ {
     ]
   }
 ```
+## Menampilkan List User
+Buka tab request baru, lalu masukkan url http://127.0.01:8000/api/login, lalu ubahlah methodnya menjadi *GET*. Kemudian klik tab Headers Lalu tambahkan *key: Accept* dengan *value: application/json*. Kemudian klik tab *Authorization* pilih *Type : Bearer Token* lalu isi dengan token yg di dapatkan ketika proses login. Kemudian klik tab Body lalu pilih *raw* dengan format *JSON*, Run.
+
+Jika Berhasil: List User akan muncul sesuai dengan data yang sudah anda buat.
+```bash
+$ [
+    [
+        {
+            "id": 1,
+            "name": "DANDY",
+            "email": "dandy@gmail.com",
+            "email_verified_at": null,
+            "created_at": "2021-04-24T07:17:36.000000Z",
+            "updated_at": "2021-04-24T07:17:36.000000Z"
+        },
+        {
+            "id": 3,
+            "name": "DANDY1",
+            "email": "dandy1@gmail.com",
+            "email_verified_at": null,
+            "created_at": "2021-04-24T07:18:13.000000Z",
+            "updated_at": "2021-04-24T07:18:13.000000Z"
+        },
+        {
+            "id": 4,
+            "name": "DANDY112",
+            "email": "dandy112@gmail.com",
+            "email_verified_at": null,
+            "created_at": "2021-04-24T07:23:10.000000Z",
+            "updated_at": "2021-04-24T07:23:10.000000Z"
+        }
+    ]
+]
+```
+
 
 
 
