@@ -48,3 +48,8 @@ jangan lupa untuk menjalankan server laravel untuk memulai.
 ```bash
 $ php artisan serve
 ```
+
+
+## 2. Testing API menggunakan Postman
+
+# Register User 
