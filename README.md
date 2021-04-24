@@ -147,7 +147,7 @@ $ [
 ]
 ```
 ## Input Data Tambah User
-Buka tab request baru, lalu masukkan url http://127.0.01:8000/api/user, lalu ubahlah methodnya menjadi *POST*. Kemudian klik tab Headers Lalu tambahkan *key: Accept* dengan *value: application/json*. Kemudian klik tab *Authorization* pilih *Type : Bearer Token* lalu isi dengan token yg di dapatkan ketika proses login. Kemudian klik tab Body lalu pilih *raw* dengan format *JSON*, 
+Buka tab request baru, lalu masukkan url http://127.0.01:8000/api/user/store, lalu ubahlah methodnya menjadi *POST*. Kemudian klik tab Headers Lalu tambahkan *key: Accept* dengan *value: application/json*. Kemudian klik tab *Authorization* pilih *Type : Bearer Token* lalu isi dengan token yg di dapatkan ketika proses login. Kemudian klik tab Body lalu pilih *raw* dengan format *JSON*, 
 
 Tuliskan: *Isi sesuai dengan data yg kalian buat*
 ```bash
@@ -158,6 +158,23 @@ $ {
   }
 ```
 Jika Berhasil : Check di database anda apakah user baru yang anda input sudah ada di database yang anda buat.
+```bash
+$ {
+    "Post Berhasil Disimpan"
+  }
+```
+## Update Data User
+Buka tab request baru, lalu masukkan url http://127.0.01:8000/api/user/update/id, gantilah id dengan angka yang sesuai dengan *id user* *anda bisa melihat id user di List User yg sudah kita tampilkan di tab *Menampilkan User* atau anda bisa langsung melihatnya di database*, lalu ubahlah methodnya menjadi *POST*. Kemudian klik tab Headers Lalu tambahkan *key: Accept* dengan *value: application/json*. Kemudian klik tab *Authorization* pilih *Type : Bearer Token* lalu isi dengan token yg di dapatkan ketika proses login. Kemudian klik tab Body lalu pilih *raw* dengan format *JSON*,
+
+Tuliskan: *Isi sesuai dengan data yg kalian buat*
+```bash
+$ {
+    "name" : "DandyUpdate",
+    "email" : "dandyUpdate@gmail.com",
+    "password" : "12345678"
+  }
+```
+Jika Berhasil : Check di database anda apakah user yang anda update sudah ter update di database yang anda buat.
 ```bash
 $ {
     "Post Berhasil Disimpan"
