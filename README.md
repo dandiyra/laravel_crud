@@ -55,12 +55,12 @@ $ php artisan serve
 ## Register User 
 Buka aplikasi postman kalian, Buka tab request baru, lalu masukkan url http://127.0.01:8000/api/register, lalu ubahlah methodnya menjadi *POST*. Kemudian klik tab Headers Lalu tambahkan *key: Accept* dengan *value: application/json*. Kemudian klik tab Body lalu pilih *raw* dengan format *JSON*,
 
-Tuliskan: 
+Tuliskan: *name, email dan password. Isi sesuai dengan data yg ingin kalian buat*
 ```bash
 $ {
-    "name" : "contoh",
-    "email" : "contoh@gmail.com",
-    "password" : "blablabla"
+    "name" : "dandy112", 
+    "email" : "dandy112@gmail.com",
+    "password" : "123456"
   }
 ```
 Jika Berhasil: 
@@ -77,5 +77,41 @@ $ {
     "message": "Gagal"
   }
 ```
+## Login User
+Buka tab request baru, lalu masukkan url http://127.0.01:8000/api/register, lalu ubahlah methodnya menjadi *POST*. Kemudian klik tab Headers Lalu tambahkan *key: Accept* dengan *value: application/json*. Kemudian klik tab Body lalu pilih *raw* dengan format *JSON*,
+
+Tuliskan: *Isi sesuai dengan data yg kalian buat*
+```bash
+$ {
+    "name" : "dandy112", 
+    "email" : "dandy112@gmail.com",
+    "password" : "123456"
+  }
+```
+Jika Berhasil:
+```bash
+$ {
+    "success": true,
+    "user": {
+        "id": 4,
+        "name": "DANDY112",
+        "email": "dandy112@gmail.com",
+        "email_verified_at": null,
+        "created_at": "2021-04-24T07:23:10.000000Z",
+        "updated_at": "2021-04-24T07:23:10.000000Z"
+    },
+    "token": "12|Lvm66FZHiuHX6zrBteL0vZMrQPWT24QlOCwefPfC"
+  }
+```
+Jika Gagal :
+```bash
+$ {
+    "success": false,
+    "message": [
+        "Email atau Password salah"
+    ]
+  }
+```
+
 
 
