@@ -5,19 +5,19 @@ Sedangkan REST API merupakan salah satu dari desain arsitektur yang terdapat di 
 
 Jadi, Nantinya data yang diberikan oleh REST server itu bisa berupa format text, JSON atau XML. Dan saat ini format yang paling populer dan paling banyak digunakan adalah       format JSON.
 
-   * Adapun metode HTTP yang secara umum dipakai dalam REST api adalah:
-    ```bash
-    $ POST, berfungsi untuk membuat sebuah data/resource baru di REST server
-    ```
-    ```bash
-    $ PUT, berfungsi untuk memperbaharui data/resource di REST server
-    ```
-    ```bash
-    $ DELETE, berfungsi untuk menghapus data/resource dari REST serve
-    ```
-    ```bash
-    $ OPTIONS, berfungsi untuk mendapatkan operasi yang disupport pada resource dari REST server.
-    ```
+* Adapun metode HTTP yang secara umum dipakai dalam REST api adalah:
+```bash
+$ POST, berfungsi untuk membuat sebuah data/resource baru di REST server
+```
+```bash
+$ PUT, berfungsi untuk memperbaharui data/resource di REST server
+```
+```bash
+$ DELETE, berfungsi untuk menghapus data/resource dari REST serve
+```
+```bash
+$ OPTIONS, berfungsi untuk mendapatkan operasi yang disupport pada resource dari REST server.
+```
 
 ## 1. Setup
 Repositori ini dibangun dengan Laravel versi 8 ke atas. Setelah melakukan fork dan clone dari repositori ini, lakukanlah langkah-langkah di bawah ini untuk menjalankan project. 
